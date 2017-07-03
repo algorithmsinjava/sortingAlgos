@@ -10,9 +10,9 @@ public class QuickSort {
 
         if(startIndex < endIndex){
 
-            int pivot = partition(a, startIndex, endIndex);
-            quickSort(a, startIndex, pivot-1);
-            quickSort(a, pivot+1, endIndex);
+            int pivotIndex = partition(a, startIndex, endIndex);
+            quickSort(a, startIndex, pivotIndex-1);
+            quickSort(a, pivotIndex+1, endIndex);
         }
 
 
